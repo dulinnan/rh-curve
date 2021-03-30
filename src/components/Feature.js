@@ -34,7 +34,7 @@ export default function Feature() {
               </h4>
               <p>
                 Please view our contact details, or fill out the online contact
-                form.
+                form. Home Hosted Dinners.
               </p>
             </div>
           </div>
