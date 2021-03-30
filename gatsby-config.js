@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: "rh-curve",
+    siteUrl: "https://ruralholidays.gatsbyjs.io"
   },
   plugins: [
     "gatsby-plugin-image",
