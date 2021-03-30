@@ -1,15 +1,21 @@
 import React from "react";
+import scrollTo from 'gatsby-plugin-smoothscroll';
 import logo_rural_holidays from "../images/logo_rural_holidays.png";
 
 export default function Header() {
   const headerStyle = {
-    paddingTop: "0 !important",
+    paddingTop: "0 !important"
   };
+  const flexFlowStyle = {
+    flexFlow: "column wrap !important"}
+  const cursorStyle ={
+    cursor: "pointer !important"
+  }
   return (
     <>
       <header role="banner" className="ui-section-header" style={headerStyle}>
         <div className="ui-layout-container">
-          <div className="ui-section-header__layout ui-layout-flex">
+          <div className="ui-section-header__layout ui-layout-flex" style={flexFlowStyle}>
             {/* <!-- LOGO --> */}
             <a
               href="/"
@@ -30,30 +36,9 @@ export default function Header() {
               role="navigation"
               className="ui-section-header--nav ui-layout-flex"
             >
-              <a
-                href="#"
-                role="link"
-                aria-label="#"
-                className="ui-section-header--nav-link"
-              >
-                Features
-              </a>
-              <a
-                href="#"
-                role="link"
-                aria-label="#"
-                className="ui-section-header--nav-link"
-              >
-                Pricing
-              </a>
-              <a
-                href="#"
-                role="link"
-                aria-label="#"
-                className="ui-section-header--nav-link"
-              >
-                About
-              </a>
+              <a role="link" onClick={() => scrollTo('#about-us')} className="ui-section-header--nav-link" style={cursorStyle}>About Us</a>
+              <a role="link" onClick={() => scrollTo('#our-survices')} className="ui-section-header--nav-link" style={cursorStyle}>Our Services</a>
+              <a role="link" onClick={() => scrollTo('#contact')} className="ui-section-header--nav-link" style={cursorStyle}>Contact</a>
             </nav>
           </div>
         </div>

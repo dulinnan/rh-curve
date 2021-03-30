@@ -2,37 +2,11 @@ import React from "react";
 
 export default function Pricing() {
   return (
-    <section className="ui-section-pricing">
+    <section className="ui-section-pricing" id="our-survices">
       <div className="ui-layout-container">
-        <h2>Fair Prices</h2>
-        <p className="ui-text-intro">Lorem ipsum dolor sit amet.</p>
-
-        <input
-          type="radio"
-          name="toggle"
-          id="ui-component-toggle__monthly"
-          checked
-        />
-        <input type="radio" name="toggle" id="ui-component-toggle__yearly" />
-        <div className="ui-component-toggle ui-layout-flex">
-          <label
-            for="ui-component-toggle__monthly"
-            className="ui-component-toggle--label"
-          >
-            Billed Monthly
-          </label>
-          <label
-            for="ui-component-toggle__yearly"
-            className="ui-component-toggle--label"
-          >
-            Billed Yearly
-          </label>
-        </div>
-        <p className="ui-text-note">
-          <small>Save 15% with a yearly plan.</small>
-        </p>
-
-        <div className="ui-section-pricing__layout ui-layout-grid ui-layout-grid-3">
+        <h2>Our Services</h2>
+         
+           <div className="ui-section-pricing__layout ui-layout-grid ui-layout-grid-3">
           <div className="ui-component-card ui-component-card--pricing">
             <span>
               <strong>Basic</strong>

@@ -1,6 +1,11 @@
 import React from "react";
+import { StaticImage } from "gatsby-plugin-image"
 
 export default function Hero() {
+  const borderStyle = {
+    border: "10px solid #cdcdcd",
+    borderRadius: "5%"
+  }
   return (
     <>
       <section className="ui-section-hero">
@@ -16,28 +21,17 @@ export default function Hero() {
                 vacation, holiday accommodation with an extensive network of
                 farm stays, and country home stays throughout New Zealand.
               </p>
-              {/* <!-- CTA --> */}
-              <div className="ui-component-cta ui-layout-flex">
-                <a
-                  href="#"
-                  role="link"
-                  aria-label="#"
-                  className="ui-component-button ui-component-button-normal ui-component-button-primary"
-                >
-                  Get Started for Free
-                </a>
-                <p className="ui-text-note">
-                  <small>30 days free trial.</small>
-                </p>
-              </div>
+            
             </div>
             {/* <!-- IMAGE --> */}
-            <img
-              src="https://res.cloudinary.com/uisual/image/upload/assets/devices/ipad.png"
+            <StaticImage
+              src="../images/hero_image.png"
               loading="lazy"
               alt="#"
+              style={borderStyle}
               className="ui-image-half-right"
             />
+
           </div>
         </div>
       </section>

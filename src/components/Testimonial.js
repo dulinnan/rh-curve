@@ -1,5 +1,6 @@
 import React from "react";
 
+
 export default function Testimonial() {
   return (
     <section className="ui-section-testimonial">
@@ -11,13 +12,12 @@ export default function Testimonial() {
             className="ui-section-testimonial--avatar"
           />
           <p className="ui-section-testimonial--quote ui-text-intro">
-            &ldquo;Lorem ipsum dolor sit amet, consec adipiscing elit, sed do
-            eiusmod tempor incididunt labore dolore magna.&rdquo;
+            &ldquo;At Rural Holidays we look forward to making your New Zealand farm stay holiday or vacation, a special experience with memories that will last a life time.&rdquo;
           </p>
           <p className="ui-section-testimonial--author">
-            <strong>Jane Doe</strong>
+            <strong>Mark</strong>
             <br />
-            <small className="ui-text-note">CEO of Company</small>
+            <small className="ui-text-note">Rural Holidays</small>
           </p>
         </div>
       </div>

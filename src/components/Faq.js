@@ -1,4 +1,6 @@
 import React from "react";
+import { StaticImage } from "gatsby-plugin-image";
+
 export default function Faq() {
   return (
     <section className="ui-section-faq">
@@ -50,13 +52,17 @@ export default function Faq() {
             </p>
           </div>
         </div>
+        
         <p className="ui-section-faq--note">
+        <StaticImage src="../images/tm.png" /><br />
           Still have questions?{" "}
           <a href="#" role="link" aria-label="#">
             Contact us
           </a>
-          .
+          .<br />
+          
         </p>
+        
       </div>
     </section>
   );
