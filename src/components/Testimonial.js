@@ -5,7 +5,7 @@ export default function Testimonial() {
   return (
     <section className="ui-section-testimonial">
       <div className="ui-layout-container">
-        <div className="ui-layout-column-4 ui-layout-column-center">
+        <div className="ui-layout-column-6 ui-layout-column-center">
           <img
             src="https://res.cloudinary.com/uisual/image/upload/assets/icons/avatar.svg"
             alt="#"

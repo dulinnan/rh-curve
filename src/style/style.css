@@ -36,7 +36,6 @@ TABLE OF CONTENT
 --------------------------------------------------------------*/
 
 :root {
-
   /*------------------------------------------------------------
   |
   | 1.1 COLOR
@@ -56,10 +55,10 @@ TABLE OF CONTENT
   --ui-color-n-900: #1a1a1a;
 
   /* BACKGROUND COLOR */
-  
-  --ui-color-background-primary  : var(--ui-color-n-000);
+
+  --ui-color-background-primary: var(--ui-color-n-000);
   --ui-color-background-secondary: var(--ui-color-n-050);
-  --ui-color-background-tertiary : var(--ui-color-n-100);
+  --ui-color-background-tertiary: var(--ui-color-n-100);
 
   /* BORDER COLOR */
 
@@ -68,9 +67,9 @@ TABLE OF CONTENT
   /* TYPOGRAPHY COLOR */
 
   --ui-color-typography-heading: var(--ui-color-n-500);
-  --ui-color-typography-body   : var(--ui-color-n-900);
-  --ui-color-typography-note   : var(--ui-color-n-300);
-  --ui-color-typography-button : var(--ui-color-n-000);
+  --ui-color-typography-body: var(--ui-color-n-900);
+  --ui-color-typography-note: var(--ui-color-n-300);
+  --ui-color-typography-button: var(--ui-color-n-000);
 
   /*------------------------------------------------------------
   |
@@ -86,58 +85,61 @@ TABLE OF CONTENT
   --ui-typography-h2: 1.5625rem;
   --ui-typography-h3: 1.25rem;
   --ui-typography-h4: 1rem;
-  --ui-typography-p : 1rem;
-  --ui-typography-s : .8125rem;
+  --ui-typography-p: 1rem;
+  --ui-typography-s: 0.8125rem;
 
   /* LEADING */
 
   --ui-typography-h1-leading: 1.2;
   --ui-typography-h2-leading: 1.2;
   --ui-typography-h4-leading: 1.25;
-  --ui-typography-p-leading : 1.5;
+  --ui-typography-p-leading: 1.5;
 
   /* MARGIN */
 
-  --ui-typography-margin-heading: .75rem;
-  --ui-typography-margin-body   : 1.125rem;
+  --ui-typography-margin-heading: 0.75rem;
+  --ui-typography-margin-body: 1.125rem;
 
   /*------------------------------------------------------------
   |
   | 1.3 LAYOUT
   |
   ------------------------------------------------------------*/
-  
+
   --ui-layout-container: 1.25rem;
-  --ui-layout-grid     : 3.625rem;
-  --ui-layout-gutter   : 1rem;
+  --ui-layout-grid: 3.625rem;
+  --ui-layout-gutter: 1rem;
 
   /* GAP */
-  
-  --ui-gap-header  : 1rem;
-  --ui-gap-cta     : .75rem;
-  --ui-gap-hero    : 2rem;
+
+  --ui-gap-header: 1rem;
+  --ui-gap-cta: 0.75rem;
+  --ui-gap-hero: 2rem;
   --ui-gap-customer: 2rem;
-  --ui-gap-card    : 1.25rem;
-  --ui-gap-pricing : 2rem;
-  --ui-gap-faq     : 1.5rem;
+  --ui-gap-card: 1.25rem;
+  --ui-gap-pricing: 2rem;
+  --ui-gap-faq: 1.5rem;
 
   /* BORDER RADIUS */
-  
+
   --ui-radius-avatar: 5rem;
   --ui-radius-button: 5rem;
-  --ui-radius-card  : .5rem;
-
+  --ui-radius-card: 0.5rem;
 }
 
 /*--------------------------------------------------------------
 2.0 FOUNDATION
 --------------------------------------------------------------*/
 
-html { box-sizing: border-box; }
+html {
+  box-sizing: border-box;
+}
 
 *,
 *:before,
-*:after { box-sizing: inherit; }
+*:after {
+  box-sizing: inherit;
+}
 
 body {
   background-color: var(--ui-color-background-primary);
@@ -165,14 +167,20 @@ h1,
 h2,
 h4,
 p,
-ul { margin-top: 0; }
+ul {
+  margin-top: 0;
+}
 
 h1,
 h2,
-h4 { color: var(--ui-color-typography-heading); }
+h4 {
+  color: var(--ui-color-typography-heading);
+}
 
 h1,
-h2 { margin-bottom: var(--ui-typography-margin-heading); }
+h2 {
+  margin-bottom: var(--ui-typography-margin-heading);
+}
 
 h1 {
   font-size: var(--ui-typography-h1);
@@ -190,16 +198,26 @@ h4 {
 }
 
 p,
-ul { margin-bottom: var(--ui-typography-margin-body); }
+ul {
+  margin-bottom: var(--ui-typography-margin-body);
+}
 
 p:last-child,
-ul:last-child { margin-bottom: 0; }
+ul:last-child {
+  margin-bottom: 0;
+}
 
-ul { padding-left: 0; }
+ul {
+  padding-left: 0;
+}
 
-strong { font-weight: 700; }
+strong {
+  font-weight: 700;
+}
 
-small { font-size: var(--ui-typography-s); }
+small {
+  font-size: var(--ui-typography-s);
+}
 
 .ui-text-note {
   color: var(--ui-color-typography-note);
@@ -233,9 +251,13 @@ svg {
   justify-content: center;
 }
 
-.ui-layout-flex { display: flex; }
+.ui-layout-flex {
+  display: flex;
+}
 
-.ui-layout-grid { display: grid; }
+.ui-layout-grid {
+  display: grid;
+}
 
 /*--------------------------------------------------------------
 6.0 COMPONENT
@@ -259,7 +281,7 @@ svg {
 --------------------------------------------------------------*/
 
 .ui-component-button {
-  border: .0625rem solid var(--ui-color-brand);
+  border: 0.0625rem solid var(--ui-color-brand);
   border-radius: var(--ui-radius-button);
   display: block;
   font-weight: 700;
@@ -279,11 +301,17 @@ svg {
 }
 
 .ui-component-button-big,
-.ui-component-button-normal { padding: .75rem 1rem .875rem; }
+.ui-component-button-normal {
+  padding: 0.75rem 1rem 0.875rem;
+}
 
-.ui-component-button-big { width: 100%; }
+.ui-component-button-big {
+  width: 100%;
+}
 
-.ui-component-button-normal { width: fit-content; }
+.ui-component-button-normal {
+  width: fit-content;
+}
 
 /*--------------------------------------------------------------
 |
@@ -291,7 +319,9 @@ svg {
 |
 --------------------------------------------------------------*/
 
-input[name="toggle"] { display: none; }
+input[name="toggle"] {
+  display: none;
+}
 
 .ui-component-toggle {
   background-color: var(--ui-color-background-tertiary);
@@ -300,21 +330,23 @@ input[name="toggle"] { display: none; }
   font-size: var(--ui-typography-s);
   font-weight: 700;
   line-height: 1;
-  margin: var(--ui-gap-pricing) auto .5rem;
-  padding: .25rem;
+  margin: var(--ui-gap-pricing) auto 0.5rem;
+  padding: 0.25rem;
   width: max-content;
 }
 
 .ui-component-toggle--label {
   border-radius: var(--ui-radius-button);
   cursor: pointer;
-  padding: .5rem .625rem;
+  padding: 0.5rem 0.625rem;
 }
 
-#ui-component-toggle__monthly:checked ~
-div label[for=ui-component-toggle__monthly],
-#ui-component-toggle__yearly:checked ~
-div label[for=ui-component-toggle__yearly] {
+#ui-component-toggle__monthly:checked
+  ~ div
+  label[for="ui-component-toggle__monthly"],
+#ui-component-toggle__yearly:checked
+  ~ div
+  label[for="ui-component-toggle__yearly"] {
   background-color: var(--ui-color-background-primary);
   color: var(--ui-color-typography-body);
 }
@@ -326,7 +358,7 @@ div label[for=ui-component-toggle__yearly] {
 --------------------------------------------------------------*/
 
 .ui-component-card {
-  border: .0625rem solid var(--ui-color-border);
+  border: 0.0625rem solid var(--ui-color-border);
   border-radius: var(--ui-radius-card);
   overflow: hidden;
   width: 100%;
@@ -340,7 +372,7 @@ div label[for=ui-component-toggle__yearly] {
 
 .ui-component-list {
   grid-template-columns: 1fr;
-  row-gap: .75rem;
+  row-gap: 0.75rem;
 }
 
 .ui-component-list--item {
@@ -374,22 +406,28 @@ div label[for=ui-component-toggle__yearly] {
   padding-top: 1.25rem;
 }
 
-.ui-section-header__layout { justify-content: space-between; }
+.ui-section-header__layout {
+  justify-content: space-between;
+}
 
 /* LOGO */
 
-.ui-section-header--logo { z-index: 1; }
+.ui-section-header--logo {
+  z-index: 1;
+}
 
 /* HAMBURGER */
 
-#ui-section-header--menu-id { display: none; }
+#ui-section-header--menu-id {
+  display: none;
+}
 
 .ui-section-header--menu-icon {
   cursor: pointer;
   display: block;
   height: 1.125rem;
-  padding-bottom: .25rem;
-  padding-top: .25rem;
+  padding-bottom: 0.25rem;
+  padding-top: 0.25rem;
   position: relative;
   width: 1.125rem;
   z-index: 1;
@@ -399,24 +437,26 @@ div label[for=ui-component-toggle__yearly] {
 .ui-section-header--menu-icon::after {
   background: var(--ui-color-brand);
   content: "";
-  height: .125rem;
+  height: 0.125rem;
   left: 0;
   position: absolute;
-  transition: all 250ms cubic-bezier(.785, .135, .15, .86);
+  transition: all 250ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
   width: 1.125rem;
 }
 
-.ui-section-header--menu-icon::before { top: .3125rem; }
-
-.ui-section-header--menu-icon::after { top: .6875rem; }
-
-#ui-section-header--menu-id:checked ~
 .ui-section-header--menu-icon::before {
+  top: 0.3125rem;
+}
+
+.ui-section-header--menu-icon::after {
+  top: 0.6875rem;
+}
+
+#ui-section-header--menu-id:checked ~ .ui-section-header--menu-icon::before {
   transform: translateY(3px) rotate(135deg);
 }
 
-#ui-section-header--menu-id:checked ~
-.ui-section-header--menu-icon::after {
+#ui-section-header--menu-id:checked ~ .ui-section-header--menu-icon::after {
   transform: translateY(-3px) rotate(45deg);
 }
 
@@ -424,7 +464,7 @@ div label[for=ui-component-toggle__yearly] {
 
 .ui-section-header--nav {
   background-color: var(--ui-color-background-primary);
-  box-shadow: 0 .5rem 1rem rgba(0,0,0,.05);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05);
   flex-direction: column;
   gap: var(--ui-gap-header);
   left: 0;
@@ -433,12 +473,11 @@ div label[for=ui-component-toggle__yearly] {
   position: absolute;
   right: 0;
   top: -1rem;
-  transition: all 250ms cubic-bezier(.785, .135, .15, .86);
+  transition: all 250ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
   visibility: hidden;
 }
 
-#ui-section-header--menu-id:checked ~
-.ui-section-header--nav {
+#ui-section-header--menu-id:checked ~ .ui-section-header--nav {
   opacity: 1;
   top: 0;
   visibility: visible;
@@ -446,7 +485,7 @@ div label[for=ui-component-toggle__yearly] {
 
 .ui-section-header--nav-link {
   font-size: var(--ui-typography-h3);
-  padding: .5rem;
+  padding: 0.5rem;
   text-decoration: none;
 }
 
@@ -462,7 +501,9 @@ div label[for=ui-component-toggle__yearly] {
   text-align: center;
 }
 
-.ui-section-hero__layout { row-gap: var(--ui-gap-hero); }
+.ui-section-hero__layout {
+  row-gap: var(--ui-gap-hero);
+}
 
 /*--------------------------------------------------------------
 |
@@ -480,9 +521,13 @@ div label[for=ui-component-toggle__yearly] {
   width: auto;
 }
 
-.ui-section-customer--logo-str { height: 1.75rem; }
-  
-.ui-section-customer--logo-bhn { height: 1.375rem; }
+.ui-section-customer--logo-str {
+  height: 1.75rem;
+}
+
+.ui-section-customer--logo-bhn {
+  height: 1.375rem;
+}
 
 /*--------------------------------------------------------------
 |
@@ -495,15 +540,23 @@ div label[for=ui-component-toggle__yearly] {
   padding-top: 5rem;
 }
 
-.ui-section-feature__layout { row-gap: var(--ui-gap-card); }
+.ui-section-feature__layout {
+  row-gap: var(--ui-gap-card);
+}
 
 /* CARD */
 
-.ui-component-card--feature { text-align: center; }
+.ui-component-card--feature {
+  text-align: center;
+}
 
-.ui-component-card--feature-content { padding: 2.25rem 1.5rem; }
+.ui-component-card--feature-content {
+  padding: 2.25rem 1.5rem;
+}
 
-.ui-component-card--feature-title { margin-bottom: .5rem; }
+.ui-component-card--feature-title {
+  margin-bottom: 0.5rem;
+}
 
 /*--------------------------------------------------------------
 |
@@ -529,7 +582,9 @@ div label[for=ui-component-toggle__yearly] {
   margin-top: 1rem;
 }
 
-.ui-section-testimonial--author { line-height: 1.25; }
+.ui-section-testimonial--author {
+  line-height: 1.25;
+}
 
 /*--------------------------------------------------------------
 |
@@ -569,20 +624,35 @@ div label[for=ui-component-toggle__yearly] {
 
 /* AMOUNT */
 
-.ui-component-card--pricing-amount-1::before { content: "$5"; }
+.ui-component-card--pricing-amount-1::before {
+  content: "$5";
+}
 
-#ui-component-toggle__yearly:checked ~ div
-.ui-component-card--pricing-amount-1::before { content: "$3"; }
+#ui-component-toggle__yearly:checked
+  ~ div
+  .ui-component-card--pricing-amount-1::before {
+  content: "$3";
+}
 
-.ui-component-card--pricing-amount-2::before { content: "$15"; }
+.ui-component-card--pricing-amount-2::before {
+  content: "$15";
+}
 
-#ui-component-toggle__yearly:checked ~ div
-.ui-component-card--pricing-amount-2::before { content: "$13"; }
+#ui-component-toggle__yearly:checked
+  ~ div
+  .ui-component-card--pricing-amount-2::before {
+  content: "$13";
+}
 
-.ui-component-card--pricing-amount-3::before { content: "$25"; }
+.ui-component-card--pricing-amount-3::before {
+  content: "$25";
+}
 
-#ui-component-toggle__yearly:checked ~ div
-.ui-component-card--pricing-amount-3::before { content: "$23"; }
+#ui-component-toggle__yearly:checked
+  ~ div
+  .ui-component-card--pricing-amount-3::before {
+  content: "$23";
+}
 
 /* LIST */
 
@@ -597,7 +667,9 @@ div label[for=ui-component-toggle__yearly] {
 |
 --------------------------------------------------------------*/
 
-.ui-section-faq { padding-bottom: 5rem; }
+.ui-section-faq {
+  padding-bottom: 5rem;
+}
 
 .ui-section-faq__layout {
   margin-bottom: 2rem;
@@ -607,12 +679,16 @@ div label[for=ui-component-toggle__yearly] {
 
 .ui-section-faq--question {
   background-image: url(https://res.cloudinary.com/uisual/image/upload/assets/icons/question.svg);
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
-.ui-section-faq--answer { padding-left: 1.875rem; }
+.ui-section-faq--answer {
+  padding-left: 1.875rem;
+}
 
-.ui-section-faq--note { text-align: center; }
+.ui-section-faq--note {
+  text-align: center;
+}
 
 /*--------------------------------------------------------------
 |
@@ -664,13 +740,11 @@ div label[for=ui-component-toggle__yearly] {
 --------------------------------------------------------------*/
 
 @media screen and (min-width: 48rem) {
-
   /*------------------------------------------------------------
   VARIABLE
   ------------------------------------------------------------*/
-  
-  :root {
 
+  :root {
     /*----------------------------------------------------------
     |
     | TYPOGRAPHY
@@ -682,8 +756,8 @@ div label[for=ui-component-toggle__yearly] {
     --ui-typography-h1: 2.1875rem;
     --ui-typography-h2: 1.75rem;
     --ui-typography-h4: 1.125rem;
-    --ui-typography-p : 1.125rem;
-    --ui-typography-s : .875rem;
+    --ui-typography-p: 1.125rem;
+    --ui-typography-s: 0.875rem;
 
     /* MARGIN */
 
@@ -696,14 +770,13 @@ div label[for=ui-component-toggle__yearly] {
     ----------------------------------------------------------*/
 
     --ui-layout-container: 4.25rem;
-    --ui-layout-gutter   : 1.5rem;
+    --ui-layout-gutter: 1.5rem;
 
     /* GAP */
 
     --ui-gap-header: 1.5rem;
-    --ui-gap-card  : 1.5rem;
-    --ui-gap-faq   : 2rem;
-
+    --ui-gap-card: 1.5rem;
+    --ui-gap-faq: 2rem;
   }
 
   /*------------------------------------------------------------
@@ -737,10 +810,12 @@ div label[for=ui-component-toggle__yearly] {
   }
 
   .ui-layout-column-4 {
-    width: calc((var(--ui-layout-grid) * 4) +
-           (var(--ui-layout-gutter) * 3));
+    width: calc((var(--ui-layout-grid) * 4) + (var(--ui-layout-gutter) * 3));
   }
 
+  .ui-layout-column-6 {
+    width: calc((var(--ui-layout-grid) * 6) + (var(--ui-layout-gutter) * 5));
+  }
   /*------------------------------------------------------------
   COMPONENT
   ------------------------------------------------------------*/
@@ -773,7 +848,9 @@ div label[for=ui-component-toggle__yearly] {
 
   /* ICON */
 
-  .ui-section-header--menu-icon { display: none; }
+  .ui-section-header--menu-icon {
+    display: none;
+  }
 
   /* NAV */
 
@@ -786,7 +863,7 @@ div label[for=ui-component-toggle__yearly] {
     position: static;
     visibility: visible;
   }
-  
+
   .ui-section-header--nav-link {
     font-size: var(--ui-typography-p);
     padding: 0;
@@ -798,9 +875,15 @@ div label[for=ui-component-toggle__yearly] {
   |
   ------------------------------------------------------------*/
 
-  .ui-section-hero { text-align: left; }
+  .ui-section-hero {
+    text-align: left;
+    background-color: var(--ui-color-background-secondary);
+    margin-top: 1.25rem;
+  }
 
-  .ui-section-hero .ui-component-cta { align-items: start; }
+  .ui-section-hero .ui-component-cta {
+    align-items: start;
+  }
 
   /*------------------------------------------------------------
   |
@@ -812,7 +895,7 @@ div label[for=ui-component-toggle__yearly] {
     column-gap: var(--ui-gap-customer);
     flex-direction: row;
   }
-  
+
   .ui-section-customer--logo {
     margin-left: 0;
     margin-right: 0;
@@ -835,7 +918,9 @@ div label[for=ui-component-toggle__yearly] {
   |
   ------------------------------------------------------------*/
 
-  .ui-component-card--pricing { padding: 2rem 2rem 2.25rem; }
+  .ui-component-card--pricing {
+    padding: 2rem 2rem 2.25rem;
+  }
 
   /*------------------------------------------------------------
   |
@@ -843,9 +928,13 @@ div label[for=ui-component-toggle__yearly] {
   |
   ------------------------------------------------------------*/
 
-  .ui-section-faq__layout { margin-bottom: 3rem; }
+  .ui-section-faq__layout {
+    margin-bottom: 3rem;
+  }
 
-  .ui-section-faq--answer { padding-left: 2rem; }
+  .ui-section-faq--answer {
+    padding-left: 2rem;
+  }
 
   /*------------------------------------------------------------
   |
@@ -871,7 +960,6 @@ div label[for=ui-component-toggle__yearly] {
     padding-bottom: 2rem;
     padding-top: 2rem;
   }
-  
 }
 
 /*--------------------------------------------------------------
@@ -881,13 +969,11 @@ div label[for=ui-component-toggle__yearly] {
 --------------------------------------------------------------*/
 
 @media screen and (min-width: 64rem) {
-
   /*------------------------------------------------------------
   VARIABLE
   ------------------------------------------------------------*/
 
   :root {
-
     /*----------------------------------------------------------
     |
     | LAYOUT
@@ -895,18 +981,23 @@ div label[for=ui-component-toggle__yearly] {
     ----------------------------------------------------------*/
 
     --ui-layout-container: 0;
-  
   }
 
   /*------------------------------------------------------------
   LAYOUT
   ------------------------------------------------------------*/
-  
-  .ui-layout-container { width: 60rem; }
 
-  .ui-layout-grid-3 { grid-template-columns: repeat(3, 1fr); }
+  .ui-layout-container {
+    width: 60rem;
+  }
 
-  .ui-layout-grid-3 div:nth-of-type(3) { position: static; }
+  .ui-layout-grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .ui-layout-grid-3 div:nth-of-type(3) {
+    position: static;
+  }
 
   /*------------------------------------------------------------
   SECTION
@@ -924,7 +1015,6 @@ div label[for=ui-component-toggle__yearly] {
     flex-direction: row;
     justify-content: start;
   }
-
 }
 
 /*--------------------------------------------------------------
@@ -934,13 +1024,11 @@ div label[for=ui-component-toggle__yearly] {
 --------------------------------------------------------------*/
 
 @media screen and (min-width: 75rem) {
-
   /*------------------------------------------------------------
   VARIABLE
   ------------------------------------------------------------*/
 
   :root {
-
     /*----------------------------------------------------------
     |
     | TYPOGRAPHY
@@ -956,7 +1044,7 @@ div label[for=ui-component-toggle__yearly] {
     /* MARGIN */
 
     --ui-typography-margin-heading: 1rem;
-    --ui-typography-margin-body   : 1.75rem;
+    --ui-typography-margin-body: 1.75rem;
 
     /*----------------------------------------------------------
     |
@@ -964,29 +1052,32 @@ div label[for=ui-component-toggle__yearly] {
     |
     ----------------------------------------------------------*/
 
-    --ui-layout-grid  : 4rem;
+    --ui-layout-grid: 4rem;
     --ui-layout-gutter: 2rem;
 
     /* GAP */
 
-    --ui-gap-header  : 2rem;
+    --ui-gap-header: 2rem;
     --ui-gap-customer: 4rem;
-    --ui-gap-card    : 2rem;
-    --ui-gap-pricing : 3rem;
-    
+    --ui-gap-card: 2rem;
+    --ui-gap-pricing: 3rem;
   }
 
   /*------------------------------------------------------------
   TYPOGRAPHY
   ------------------------------------------------------------*/
 
-  .ui-text-intro { font-size: var(--ui-typography-h4); }
+  .ui-text-intro {
+    font-size: var(--ui-typography-h4);
+  }
 
   /*------------------------------------------------------------
   LAYOUT
   ------------------------------------------------------------*/
-  
-  .ui-layout-container { width: 70rem; }
+
+  .ui-layout-container {
+    width: 70rem;
+  }
 
   /*------------------------------------------------------------
   COMPONENT
@@ -1014,7 +1105,9 @@ div label[for=ui-component-toggle__yearly] {
   |
   ------------------------------------------------------------*/
 
-  .ui-section-header { padding-top: 3rem; }
+  .ui-section-header {
+    padding-top: 3rem;
+  }
 
   /*------------------------------------------------------------
   |
@@ -1033,11 +1126,17 @@ div label[for=ui-component-toggle__yearly] {
   |
   ------------------------------------------------------------*/
 
-  .ui-section-customer--logo { height: 2rem; }
-  
-  .ui-section-customer--logo-str { height: 2.25rem; }
-  
-  .ui-section-customer--logo-bhn { height: 1.75rem; }
+  .ui-section-customer--logo {
+    height: 2rem;
+  }
+
+  .ui-section-customer--logo-str {
+    height: 2.25rem;
+  }
+
+  .ui-section-customer--logo-bhn {
+    height: 1.75rem;
+  }
 
   /*------------------------------------------------------------
   |
@@ -1072,7 +1171,9 @@ div label[for=ui-component-toggle__yearly] {
     padding-top: 7.5rem;
   }
 
-  .ui-component-card--pricing { padding: 3rem; }
+  .ui-component-card--pricing {
+    padding: 3rem;
+  }
 
   /*------------------------------------------------------------
   |
@@ -1080,9 +1181,13 @@ div label[for=ui-component-toggle__yearly] {
   |
   ------------------------------------------------------------*/
 
-  .ui-section-faq { padding-bottom: 7.5rem; }
+  .ui-section-faq {
+    padding-bottom: 7.5rem;
+  }
 
-  .ui-section-faq__layout { margin-bottom: 5rem; }
+  .ui-section-faq__layout {
+    margin-bottom: 5rem;
+  }
 
   /*------------------------------------------------------------
   |
@@ -1094,7 +1199,7 @@ div label[for=ui-component-toggle__yearly] {
     padding-bottom: 7.5rem;
     padding-top: 7.5rem;
   }
-  
+
   /*------------------------------------------------------------
   |
   | FOOTER
@@ -1105,5 +1210,4 @@ div label[for=ui-component-toggle__yearly] {
     padding-bottom: 3rem;
     padding-top: 3rem;
   }
-
 }

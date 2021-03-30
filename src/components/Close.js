@@ -8,7 +8,7 @@ export default function Close() {
         <div className="ui-layout-container">
           <div className="ui-section-close__layout ui-layout-flex">
             <div>
-              <h2>Ready to start?</h2>
+              <h2>Contact Us</h2>
               <p className="ui-text-intro">
                 Lorem ipsum dolor sit amet consectetur.
               </p>
