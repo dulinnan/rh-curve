@@ -243,6 +243,7 @@ svg {
 .ui-layout-container {
   padding-left: var(--ui-layout-container);
   padding-right: var(--ui-layout-container);
+  z-index: 200;
 }
 
 .ui-layout-flex,
@@ -487,6 +488,7 @@ input[name="toggle"] {
   font-size: var(--ui-typography-h3);
   padding: 0.5rem;
   text-decoration: none;
+  color: var(--ui-color-n-000);
 }
 
 /*--------------------------------------------------------------
@@ -503,6 +505,11 @@ input[name="toggle"] {
 
 .ui-section-hero__layout {
   row-gap: var(--ui-gap-hero);
+  color: var(--ui-color-n-500);
+}
+
+.ui-section-hero__layout h1 {
+  color: var(--ui-color-n-500);
 }
 
 /*--------------------------------------------------------------
@@ -542,6 +549,7 @@ input[name="toggle"] {
 
 .ui-section-feature__layout {
   row-gap: var(--ui-gap-card);
+  margin-bottom: var(--ui-typography-margin-body);
 }
 
 /* CARD */
@@ -877,12 +885,23 @@ input[name="toggle"] {
 
   .ui-section-hero {
     text-align: left;
-    background-color: var(--ui-color-background-secondary);
-    margin-top: 1.25rem;
   }
 
   .ui-section-hero .ui-component-cta {
     align-items: start;
+  }
+
+  .ui-section-hero.bg-image {
+    /* The image used */
+    background-image: url("../images/hero_background.png");
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   /*------------------------------------------------------------

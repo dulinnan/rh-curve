@@ -1,14 +1,14 @@
 import React from "react";
-import { StaticImage } from "gatsby-plugin-image"
+import { StaticImage } from "gatsby-plugin-image";
 
 export default function Hero() {
   const borderStyle = {
     border: "10px solid #cdcdcd",
-    borderRadius: "5%"
-  }
+    borderRadius: "5%",
+  };
   return (
     <>
-      <section className="ui-section-hero">
+      <section className="ui-section-hero bg-image">
         <div className="ui-layout-container">
           <div className="ui-section-hero__layout ui-layout-grid ui-layout-grid-2">
             {/* <!-- COPYWRITING --> */}
@@ -21,7 +21,6 @@ export default function Hero() {
                 vacation, holiday accommodation with an extensive network of
                 farm stays, and country home stays throughout New Zealand.
               </p>
-            
             </div>
             {/* <!-- IMAGE --> */}
             <StaticImage
@@ -31,7 +30,6 @@ export default function Hero() {
               style={borderStyle}
               className="ui-image-half-right"
             />
-
           </div>
         </div>
       </section>
