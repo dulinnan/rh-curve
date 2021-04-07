@@ -902,7 +902,7 @@ input[name="toggle"] {
     /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: auto;
   }
 
   /*------------------------------------------------------------
