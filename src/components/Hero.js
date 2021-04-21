@@ -14,12 +14,13 @@ export default function Hero() {
             {/* <!-- COPYWRITING --> */}
             <div>
               <h1>Kia Ora</h1>
-              <h3>Hello and welcome to Aotearoa New Zealand</h3>
-              <p className="ui-text-intro">
-                Rural Holidays NZ Ltd is a New Zealand leading ON-LINE provider
-                of pre-booked quality hosted farm stay, country home stay,
-                vacation, holiday accommodation with an extensive network of
-                farm stays, and country home stays throughout New Zealand.
+              <h3>Hello and welcome to Aotearoa/New Zealand</h3>
+              <p className="ui-text-hero">
+                Rural Holidays NZ Ltd is a leading and a long-established
+                original owner operated ON LINE provider of pre booked quality
+                hosted farm and country home stays, plus other hospitality
+                options with an extensive network of carefully selected
+                properties throughout New Zealand.
               </p>
             </div>
             {/* <!-- IMAGE --> */}

@@ -543,6 +543,7 @@ input[name="toggle"] {
 --------------------------------------------------------------*/
 
 .ui-section-feature {
+  background-color: var(--ui-color-background-secondary);
   padding-bottom: 5rem;
   padding-top: 5rem;
 }
@@ -559,6 +560,7 @@ input[name="toggle"] {
 }
 
 .ui-component-card--feature-content {
+  background-color: var(--ui-color-background-primary);
   padding: 2.25rem 1.5rem;
 }
 
@@ -573,7 +575,7 @@ input[name="toggle"] {
 --------------------------------------------------------------*/
 
 .ui-section-testimonial {
-  background-color: var(--ui-color-background-secondary);
+  
   padding-bottom: 5rem;
   padding-top: 5rem;
   text-align: center;
@@ -601,6 +603,7 @@ input[name="toggle"] {
 --------------------------------------------------------------*/
 
 .ui-section-pricing {
+  background-color: var(--ui-color-background-secondary);
   padding-bottom: 5rem;
   padding-top: 5rem;
   text-align: center;
@@ -676,6 +679,7 @@ input[name="toggle"] {
 --------------------------------------------------------------*/
 
 .ui-section-faq {
+  background-color: var(--ui-color-background-secondary);
   padding-bottom: 5rem;
 }
 
@@ -705,7 +709,7 @@ input[name="toggle"] {
 --------------------------------------------------------------*/
 
 .ui-section-close {
-  background-color: var(--ui-color-background-secondary);
+  background-color: var(--ui-color-background-primary);
   padding-bottom: 5rem;
   padding-top: 5rem;
   text-align: center;
@@ -724,6 +728,7 @@ input[name="toggle"] {
 --------------------------------------------------------------*/
 
 .ui-section-footer {
+  background-color: var(--ui-color-background-secondary);
   padding-bottom: 1.25rem;
   padding-top: 1.25rem;
 }
@@ -1059,6 +1064,7 @@ input[name="toggle"] {
     --ui-typography-h1: 2.75rem;
     --ui-typography-h2: 2.1875rem;
     --ui-typography-h4: 1.4375rem;
+    --ui-typography-h6: 1rem;
 
     /* MARGIN */
 
@@ -1088,6 +1094,10 @@ input[name="toggle"] {
 
   .ui-text-intro {
     font-size: var(--ui-typography-h4);
+  }
+
+  .ui-text-hero {
+    font-size: var(--ui-typography-h6);
   }
 
   /*------------------------------------------------------------

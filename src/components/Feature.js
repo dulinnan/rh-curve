@@ -9,74 +9,55 @@ export default function Feature() {
           <div className="ui-component-card ui-component-card--feature">
             <StaticImage src="../images/farm_stay.png" alt="farm stay" />
             <div className="ui-component-card--feature-content">
-              <h4 className="ui-component-card--feature-title">Farm Stays</h4>
+              <h4 className="ui-component-card--feature-title">
+                Overnight Farm & Country Stays
+              </h4>
               <p>
-                Our collection of quality farm stays, country stays and home
-                stays throughout New Zealand.
+                Stay in the farmers home, based on a dinner, bed and breakfast
+                basis, including a guided tour of the farm property.
               </p>
             </div>
           </div>
           <div className="ui-component-card ui-component-card--feature">
             <StaticImage src="../images/home_stay.png" alt="home stay" />
             <div className="ui-component-card--feature-content">
-              <h4 className="ui-component-card--feature-title">Home Stays</h4>
+              <h4 className="ui-component-card--feature-title">
+                Technical Farm Visits
+              </h4>
               <p>
-                Types of accommodation available, Farm stays, country home
-                stays, city home stays.
+                When time is short, visits of one hour’s duration that can be
+                arranged with optional catering options.
               </p>
             </div>
           </div>
           <div className="ui-component-card ui-component-card--feature">
-            <StaticImage src="../images/home_hosted_dinners.png" alt="home hosted dinners"/>
+            <StaticImage
+              src="../images/home_hosted_dinners.png"
+              alt="home hosted dinners"
+            />
             <div className="ui-component-card--feature-content">
-              <h4 className="ui-component-card--feature-title">
-                Home Hosted Dinners
-              </h4>
-              <p>
-                Please view our contact details, or fill out the online contact
-                form. Home Hosted Dinners.
-              </p>
+              <h4 className="ui-component-card--feature-title">Day Visits</h4>
+              <p>Enjoy meeting with a Kiwi family in their home.</p>
             </div>
           </div>
         </div>
-        
       </div>
       <div className="ui-layout-container">
-        <div className="ui-section-feature__layout ui-layout-grid ui-layout-grid-3">
-          <div className="ui-component-card ui-component-card--feature">
-            <StaticImage src="../images/farm_stay.png" alt="farm stay" />
-            <div className="ui-component-card--feature-content">
-              <h4 className="ui-component-card--feature-title">Farm Stays</h4>
-              <p>
-                Our collection of quality farm stays, country stays and home
-                stays throughout New Zealand.
-              </p>
-            </div>
-          </div>
+        
           <div className="ui-component-card ui-component-card--feature">
             <StaticImage src="../images/home_stay.png" alt="home stay" />
             <div className="ui-component-card--feature-content">
-              <h4 className="ui-component-card--feature-title">Home Stays</h4>
-              <p>
-                Types of accommodation available, Farm stays, country home
-                stays, city home stays.
-              </p>
-            </div>
-          </div>
-          <div className="ui-component-card ui-component-card--feature">
-            <StaticImage src="../images/home_hosted_dinners.png" alt="home hosted dinners"/>
-            <div className="ui-component-card--feature-content">
               <h4 className="ui-component-card--feature-title">
-                Home Hosted Dinners
+                Home Hosted Evening Dinners
               </h4>
               <p>
-                Please view our contact details, or fill out the online contact
-                form. Home Hosted Dinners.
+                Experience an evening of complete hospitality in a Kiwi home,
+                enjoy a delicious 3 course meal.
               </p>
             </div>
           </div>
-        </div>
-        
+          
+   
       </div>
     </section>
   );

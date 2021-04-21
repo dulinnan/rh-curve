@@ -8,61 +8,56 @@ export default function Faq() {
         <div className="ui-section-faq__layout ui-layout-grid ui-layout-grid-2">
           <div>
             <h4 className="ui-component-list--item ui-section-faq--question">
-              What is Farm and Country Hosting?
+              Overnight Farm & Country Stays
             </h4>
             <p className="ui-section-faq--answer">
-              New Zealand farm (rural) and country stay (semi-rural) hosting is
-              staying with warm, friendly New Zealanders in the comfort of their
-              homes. It is about meeting people who are genuinely interested in
-              sharing their hospitality, country, and life style with overseas
-              and local visitors.
+              Stay in a private home, with guest only facilities separate from
+              the hosts. Our network extends from the top of the North Island to
+              the lower South Island and various locations in between, contact
+              us for list of locations. Ideal for independent travelers and
+              small custom tour groups.
             </p>
           </div>
           <div>
             <h4 className="ui-component-list--item ui-section-faq--question">
-              Lorem ipsum dolor?
+              Technical Farm Visits
             </h4>
             <p className="ui-section-faq--answer">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
+              Available at selected host properties nationwide, ideal for tour
+              groups, with morning or afternoon tea, or a catered lunch option.
             </p>
           </div>
           <div>
             <h4 className="ui-component-list--item ui-section-faq--question">
-              Lorem ipsum dolor?
+              Day Visits
             </h4>
             <p className="ui-section-faq--answer">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
+              Offers a snap shot of life in a Kiwi home, tailor-made and
+              designed to suit individual visitors to include morning or
+              afternoon tea, or lunch and farm activities.
             </p>
           </div>
           <div>
             <h4 className="ui-component-list--item ui-section-faq--question">
-              Lorem ipsum dolor?
+              Home Hosted Evening Dinners
             </h4>
             <p className="ui-section-faq--answer">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
+              This program operates primarily for tour groups (both series and
+              one-off groups) in the garden city of Christchurch, with limited
+              options in Rotorua and Queenstown.
             </p>
           </div>
         </div>
-        
+
         <p className="ui-section-faq--note">
-        <StaticImage src="../images/tm.png" /><br />
+          <StaticImage src="../images/tm.png" />
+          <br />
           Still have questions?{" "}
           <a href="#" role="link" aria-label="#">
             Contact us
           </a>
           .<br />
-          
         </p>
-        
       </div>
     </section>
   );

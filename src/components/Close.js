@@ -1,6 +1,5 @@
 import React from "react";
 
-
 export default function Close() {
   return (
     <>
@@ -10,7 +9,10 @@ export default function Close() {
             <div>
               <h2>Contact Us</h2>
               <p className="ui-text-intro">
-                Lorem ipsum dolor sit amet consectetur.
+                Pre booking is essential for all services listed. We prefer as
+                much notice in advance (minimum 21 days) to arrange and pre book
+                our hosts. Our central reservation office is based in
+                Christchurch.
               </p>
             </div>
 
