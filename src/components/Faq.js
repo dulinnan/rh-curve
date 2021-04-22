@@ -18,7 +18,7 @@ export default function Faq() {
               small custom tour groups.
             </p>
           </div>
-          <div>
+          <div style={{alignSelf: "start !important;"}}>
             <h4 className="ui-component-list--item ui-section-faq--question">
               Technical Farm Visits
             </h4>
