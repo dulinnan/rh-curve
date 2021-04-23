@@ -1,4 +1,4 @@
-import React, {useState } from "react";
+import React, { useState } from "react";
 import scrollTo from "gatsby-plugin-smoothscroll";
 import logo_rural_holidays from "../images/logo_rural_holidays.png";
 
@@ -16,12 +16,18 @@ export default function Header() {
 
   const [display, setDisplay] = useState(true);
 
-  const logoStyle = {
+  const visibilityStyle = {
     visibility: display === true ? "" : "hidden",
-  }
-  const onClickMobile =()=> {
+  };
+
+  const navStyle = {
+    backgroundColor: "rgb(66, 182, 37) !important",
+    width: "100%",
+    height: display === true ? "3rem !important": "",
+  };
+  const onClickMobile = () => {
     display === true ? setDisplay(false) : setDisplay(true);
-  }
+  };
   return (
     <>
       <header role="banner" className="ui-section-header" style={headerStyle}>
@@ -37,21 +43,25 @@ export default function Header() {
               role="link"
               aria-label="#"
               className="ui-section-header--logo"
-              style={logoStyle}
+              style={visibilityStyle}
             >
               <img src={logo_rural_holidays}></img>
             </a>
             {/* <!-- HAMBURGER --> */}
-            <input type="checkbox" id="ui-section-header--menu-id" onClick={onClickMobile} />
+            <input
+              type="checkbox"
+              id="ui-section-header--menu-id"
+              onClick={onClickMobile}
+            />
             <label
               for="ui-section-header--menu-id"
-              className="ui-section-header--menu-icon" 
+              className="ui-section-header--menu-icon"
             ></label>
             {/* <!-- MENU --> */}
             <nav
               role="navigation"
               className="ui-section-header--nav ui-layout-flex"
-              style={{ backgroundColor: "rgb(66, 182, 37) !important", width: "100%", height: "3rem !important" }}
+              style={navStyle}
             >
               <a
                 role="link"
@@ -61,7 +71,7 @@ export default function Header() {
               >
                 About Us
               </a>
-              <div class="nav-divider"></div>
+              <div style={visibilityStyle} class="nav-divider"></div>
               <a
                 role="link"
                 onClick={() => scrollTo("#our-survices")}
@@ -70,7 +80,7 @@ export default function Header() {
               >
                 Our Services
               </a>
-              <div class="nav-divider"></div>
+              <div style={visibilityStyle} class="nav-divider"></div>
               <a
                 role="link"
                 onClick={() => scrollTo("#contact")}
