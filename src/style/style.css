@@ -562,7 +562,7 @@ form {
   padding-bottom: 5rem;
   padding-top: 5rem;
   text-align: center;
-  height: 100vh;
+  height: calc(100vh - 154px - 3rem);
 }
 
 .ui-section-hero__layout {
