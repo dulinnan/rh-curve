@@ -54,7 +54,7 @@ export default function Faq() {
         </div>
 
         <p className="ui-section-faq--note">
-          <StaticImage src="../images/tm.png" />
+          <StaticImage src="../images/tm.png" width="400"/>
           <br />
           Still have questions?{" "}
           <a

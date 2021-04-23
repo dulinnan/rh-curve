@@ -607,7 +607,7 @@ form {
 .ui-section-feature {
   background-color: var(--ui-color-background-secondary);
   padding-bottom: 5rem;
-  padding-top: 5rem;
+  /* padding-top: 5rem; */
 }
 
 .ui-section-feature__layout {
@@ -1262,7 +1262,7 @@ form {
 
   .ui-section-feature {
     padding-bottom: 7.5rem;
-    padding-top: 7.5rem;
+    /* padding-top: 7.5rem; */
   }
 
   /*------------------------------------------------------------
