@@ -51,7 +51,7 @@ export default function Header() {
             <nav
               role="navigation"
               className="ui-section-header--nav ui-layout-flex"
-              style={{ backgroundColor: "rgb(66, 182, 37) !important", width: "100vw" }}
+              style={{ backgroundColor: "rgb(66, 182, 37) !important", width: "100%", height: "3rem !important" }}
             >
               <a
                 role="link"
@@ -61,6 +61,7 @@ export default function Header() {
               >
                 About Us
               </a>
+              <div class="nav-divider"></div>
               <a
                 role="link"
                 onClick={() => scrollTo("#our-survices")}
@@ -69,6 +70,7 @@ export default function Header() {
               >
                 Our Services
               </a>
+              <div class="nav-divider"></div>
               <a
                 role="link"
                 onClick={() => scrollTo("#contact")}

@@ -1,7 +1,11 @@
 import React from "react";
 import { StaticImage } from "gatsby-plugin-image";
-
+import scrollTo from "gatsby-plugin-smoothscroll";
 export default function Faq() {
+  const cursorStyle = {
+    cursor: "pointer !important",
+    textDecoration: "underline"
+  };
   return (
     <section className="ui-section-faq">
       <div className="ui-layout-container">
@@ -18,7 +22,7 @@ export default function Faq() {
               small custom tour groups.
             </p>
           </div>
-          <div style={{alignSelf: "start !important;"}}>
+          <div style={{ alignSelf: "start !important;" }}>
             <h4 className="ui-component-list--item ui-section-faq--question">
               Technical Farm Visits
             </h4>
@@ -53,7 +57,11 @@ export default function Faq() {
           <StaticImage src="../images/tm.png" />
           <br />
           Still have questions?{" "}
-          <a href="#" role="link" aria-label="#">
+          <a
+            onClick={() => scrollTo("#contact")}
+            aria-label="#contact"
+            style={cursorStyle}
+          >
             Contact us
           </a>
           .<br />

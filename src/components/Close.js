@@ -15,19 +15,55 @@ export default function Close() {
                 Christchurch.
               </p>
             </div>
-
             <div className="ui-component-cta ui-layout-flex">
-              <a
-                href="#"
-                role="link"
-                aria-label="#"
-                className="ui-component-button ui-component-button-normal ui-component-button-primary"
+              <form
+                method="POST"
+                action="https://formspree.io/contact@codos.co.nz"
+                className="ui-component-form"
               >
-                Get Started for Free
-              </a>
-              <p className="ui-text-note">
-                <small>30 days free trial.</small>
-              </p>
+                <div>
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    className="ui-component-input ui-component-input-medium"
+                    placeholder={"Name"}
+                    required
+                  />
+                </div>
+                <div>
+                  <input
+                    type="email"
+                    className="ui-component-input ui-component-input-medium"
+                    name="email"
+                    id="email"
+                    placeholder={"Email"}
+                    required
+                  />
+                </div>
+                <div>
+                  <textarea
+                    className="ui-component-input ui-component-input-medium"
+                    name="message"
+                    id="message"
+                    required
+                    placeholder={"Your Message"}
+                    style={{
+                      minHeight: "5rem",
+                      resize: "none",
+                    }}
+                  ></textarea>
+                </div>
+                <div>
+                  <button
+                    className="ui-component-button ui-component-button-normal ui-component-button-primary"
+                    type="submit"
+                    value="send"
+                  >
+                    Submit
+                  </button>
+                </div>
+              </form>
             </div>
           </div>
         </div>

@@ -125,6 +125,10 @@ TABLE OF CONTENT
   --ui-radius-avatar: 5rem;
   --ui-radius-button: 5rem;
   --ui-radius-card: 0.5rem;
+
+  /* FORM COLOR */
+
+  --ui-color-form-input: var(--ui-color-n-100);
 }
 
 /*--------------------------------------------------------------
@@ -393,6 +397,56 @@ input[name="toggle"] {
 }
 
 /*--------------------------------------------------------------
+|
+| 6.6 FORM
+|
+--------------------------------------------------------------*/
+
+input,
+button,
+textarea {
+  color: inherit;
+  font-family: inherit;
+  font-size: var(--ui-typography-p);
+  line-height: 1;
+  margin: 0;
+  outline: none;
+  text-rendering: inherit;
+  text-transform: none;
+}
+
+/* FORM */
+
+form {
+  width: 100%;
+}
+
+.ui-component-form {
+  border-radius: var(--ui-radius-card);
+  grid-template-columns: minmax(0, 1fr) auto;
+  padding: 0.25rem;
+}
+
+/* INPUT */
+
+::placeholder {
+  color: var(--ui-color-typography-note);
+}
+
+.ui-component-input {
+  background-color: var(--ui-color-form-input);
+  border: 0.0625rem solid var(--ui-color-form-input);
+  border-radius: var(--ui-radius-card);
+  width: 100%;
+  margin-bottom: 1rem
+}
+
+.ui-component-input-medium {
+  height: 2.5rem;
+  padding: 0.625rem 1rem 0.75rem;
+}
+
+/*--------------------------------------------------------------
 7.0 SECTION
 --------------------------------------------------------------*/
 
@@ -464,7 +518,7 @@ input[name="toggle"] {
 /* MENU */
 
 .ui-section-header--nav {
-  background-color: var(--ui-color-background-primary);
+  background-color: rgb(66, 182, 37);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05);
   flex-direction: column;
   gap: var(--ui-gap-header);
@@ -491,6 +545,13 @@ input[name="toggle"] {
   color: var(--ui-color-n-000);
 }
 
+.nav-divider {
+  border-left: 0.5px solid var(--ui-color-background-secondary);
+  background: var(--ui-color-background-secondary);
+  width: 0.5px;
+  height: 2rem;
+}
+
 /*--------------------------------------------------------------
 |
 | 7.2 HERO
@@ -501,6 +562,7 @@ input[name="toggle"] {
   padding-bottom: 5rem;
   padding-top: 5rem;
   text-align: center;
+  height: 100vh;
 }
 
 .ui-section-hero__layout {
@@ -693,6 +755,9 @@ input[name="toggle"] {
   row-gap: var(--ui-gap-faq);
   text-align: left;
 }
+.ui-section-faq__layout div {
+  align-self: start;
+}
 
 .ui-section-faq--question {
   background-image: url(https://res.cloudinary.com/uisual/image/upload/assets/icons/question.svg);
@@ -826,6 +891,15 @@ input[name="toggle"] {
     left: calc(50% + (var(--ui-layout-gutter) / 2));
     position: relative;
   }
+  .ui-layout-grid-4 {
+    column-gap: var(--ui-layout-gutter);
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+  }
+  .ui-layout-grid-4 div:nth-of-type(4) {
+    left: calc(100% + (var(--ui-layout-gutter) ));
+    position: relative;
+  }
 
   .ui-layout-column-4 {
     width: calc((var(--ui-layout-grid) * 4) + (var(--ui-layout-gutter) * 3));
@@ -906,7 +980,7 @@ input[name="toggle"] {
     background-image: url("../images/hero_background.png");
 
     /* Full height */
-    height: 100%;
+    /* height: 100%; */
 
     /* Center and scale the image nicely */
     background-position: center;
@@ -939,6 +1013,7 @@ input[name="toggle"] {
   .ui-component-card--feature-content {
     padding-left: 2.25rem;
     padding-right: 2.25rem;
+    min-height: 260px;
   }
 
   /*------------------------------------------------------------
@@ -977,6 +1052,13 @@ input[name="toggle"] {
     flex-direction: row;
     justify-content: space-between;
     text-align: left;
+  }
+
+  .ui-section-close__layout div {
+    align-self: start;
+    flex-grow: 1;
+    flex-basis: 0;
+    align-items: start;
   }
 
   /*------------------------------------------------------------

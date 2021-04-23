@@ -6,7 +6,7 @@ export default function Feature() {
     <section className="ui-section-feature" id="about-us">
       <div className="ui-layout-container">
         <h2>About Us</h2>
-        <div className="ui-section-feature__layout ui-layout-grid ui-layout-grid-3">
+        <div className="ui-section-feature__layout ui-layout-grid ui-layout-grid-4">
           <div className="ui-component-card ui-component-card--feature">
             <StaticImage src="../images/farm_stay.png" alt="farm stay" />
             <div className="ui-component-card--feature-content">
@@ -41,10 +41,7 @@ export default function Feature() {
               <p>Enjoy meeting with a Kiwi family in their home.</p>
             </div>
           </div>
-        </div>
-      </div>
-      <div className="ui-layout-container">
-        <div className="ui-component-card ui-component-card--feature">
+          <div className="ui-component-card ui-component-card--feature">
           <StaticImage src="../images/home_stay.png" alt="home stay" />
           <div className="ui-component-card--feature-content">
             <h4 className="ui-component-card--feature-title">
@@ -55,6 +52,7 @@ export default function Feature() {
               enjoy a delicious 3 course meal.
             </p>
           </div>
+        </div>
         </div>
       </div>
     </section>
