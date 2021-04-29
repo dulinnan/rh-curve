@@ -8,7 +8,10 @@ export default function Feature() {
         <h2>About Us</h2>
         <div className="ui-section-feature__layout ui-layout-grid ui-layout-grid-4">
           <div className="ui-component-card ui-component-card--feature">
-            <StaticImage src="../images/farm_stay.png" alt="farm stay" />
+            <StaticImage
+              src="../images/overnight_farm_and_country_stays.png"
+              alt="overnight farm and country stays"
+            />
             <div className="ui-component-card--feature-content">
               <h4 className="ui-component-card--feature-title">
                 Overnight Farm & Country Stays
@@ -20,7 +23,10 @@ export default function Feature() {
             </div>
           </div>
           <div className="ui-component-card ui-component-card--feature">
-            <StaticImage src="../images/home_stay.png" alt="home stay" />
+            <StaticImage
+              src="../images/tech_farm_visits.png"
+              alt="tech farm visits"
+            />
             <div className="ui-component-card--feature-content">
               <h4 className="ui-component-card--feature-title">
                 Technical Farm Visits
@@ -33,7 +39,7 @@ export default function Feature() {
           </div>
           <div className="ui-component-card ui-component-card--feature">
             <StaticImage
-              src="../images/home_hosted_dinners.png"
+              src="../images/day_visits.png"
               alt="home hosted dinners"
             />
             <div className="ui-component-card--feature-content">
@@ -42,17 +48,20 @@ export default function Feature() {
             </div>
           </div>
           <div className="ui-component-card ui-component-card--feature">
-          <StaticImage src="../images/home_stay.png" alt="home stay" />
-          <div className="ui-component-card--feature-content">
-            <h4 className="ui-component-card--feature-title">
-              Home Hosted Evening Dinners
-            </h4>
-            <p>
-              Experience an evening of complete hospitality in a Kiwi home,
-              enjoy a delicious 3 course meal.
-            </p>
+            <StaticImage
+              src="../images/home_hosted_evening_dinners.png"
+              alt="home stay"
+            />
+            <div className="ui-component-card--feature-content">
+              <h4 className="ui-component-card--feature-title">
+                Home Hosted Evening Dinners
+              </h4>
+              <p>
+                Experience an evening of complete hospitality in a Kiwi home,
+                enjoy a delicious 3 course meal.
+              </p>
+            </div>
           </div>
-        </div>
         </div>
       </div>
     </section>
