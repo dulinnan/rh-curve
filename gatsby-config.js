@@ -1,7 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: "rh-curve",
-    siteUrl: "https://ruralholidays.gatsbyjs.io"
+    title: `Rural Holidays`,
+    siteUrl: "https://ruralholidays.gatsbyjs.io",
+    description: `Home to Rural Holidays`,
+    author: `CODOS`,
   },
   plugins: [
     "gatsby-plugin-image",
@@ -23,14 +25,28 @@ module.exports = {
       },
       __key: "images",
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `files`,
+        path: `${__dirname}/src/staticFiles`,
+      },
+      __key: "files",
+    },
     `gatsby-plugin-smoothscroll`,
     {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
         google: {
-          families: ['Roboto Slab', 'Droid Sans', 'Droid Serif']
+          families: ['Roboto Slab']
         }
       }
-    }
+    },
+    {
+      resolve: `gatsby-plugin-layout`,
+      options: {
+        component: require.resolve(`./src/components/layout.js`),
+      },
+    },
   ],
 };

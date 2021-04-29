@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import scrollTo from "gatsby-plugin-smoothscroll";
 import logo_rural_holidays from "../images/logo_rural_holidays.png";
+import "../style/style.css";
+import { Link } from "gatsby";
 
 export default function Header() {
   const headerStyle = {
@@ -23,7 +25,7 @@ export default function Header() {
   const navStyle = {
     backgroundColor: "rgb(66, 182, 37) !important",
     width: "100%",
-    height: display === true ? "3rem !important": "",
+    height: display === true ? "3rem !important" : "",
   };
   const onClickMobile = () => {
     display === true ? setDisplay(false) : setDisplay(true);
@@ -38,15 +40,15 @@ export default function Header() {
             style={flexFlowStyle}
           >
             {/* <!-- LOGO --> */}
-            <a
-              href="/"
-              role="link"
-              aria-label="#"
+
+            <Link
+              to="/"
               className="ui-section-header--logo"
               style={visibilityStyle}
             >
               <img src={logo_rural_holidays}></img>
-            </a>
+            </Link>
+
             {/* <!-- HAMBURGER --> */}
             <input
               type="checkbox"
@@ -63,32 +65,29 @@ export default function Header() {
               className="ui-section-header--nav ui-layout-flex"
               style={navStyle}
             >
-              <a
-                role="link"
-                onClick={() => scrollTo("#about-us")}
+              <Link
+                to="/#about-us"
                 className="ui-section-header--nav-link"
                 style={cursorStyle}
               >
                 About Us
-              </a>
+              </Link>
               <div style={visibilityStyle} class="nav-divider"></div>
-              <a
-                role="link"
-                onClick={() => scrollTo("#our-survices")}
+              <Link
+                to="/#our-survices"
                 className="ui-section-header--nav-link"
                 style={cursorStyle}
               >
                 Our Services
-              </a>
+              </Link>
               <div style={visibilityStyle} class="nav-divider"></div>
-              <a
-                role="link"
-                onClick={() => scrollTo("#contact")}
+              <Link
+                to="/#contact"
                 className="ui-section-header--nav-link"
                 style={cursorStyle}
               >
-                Contact
-              </a>
+                contact
+              </Link>
             </nav>
           </div>
         </div>

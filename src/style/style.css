@@ -438,7 +438,7 @@ form {
   border: 0.0625rem solid var(--ui-color-form-input);
   border-radius: var(--ui-radius-card);
   width: 100%;
-  margin-bottom: 1rem
+  margin-bottom: 1rem;
 }
 
 .ui-component-input-medium {
@@ -812,6 +812,10 @@ form {
   margin-bottom: 0;
   /* margin-right: auto; */
 }
+.ui-section-footer--copyright a {
+  text-decoration-line: none !important;
+  color: var(--ui-color-typography-note);
+}
 
 /*--------------------------------------------------------------
 8.0 MEDIA
@@ -898,7 +902,7 @@ form {
     justify-items: center;
   }
   .ui-layout-grid-4 div:nth-of-type(4) {
-    left: calc(100% + (var(--ui-layout-gutter) ));
+    left: calc(100% + (var(--ui-layout-gutter)));
     position: relative;
   }
 
