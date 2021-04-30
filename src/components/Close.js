@@ -18,7 +18,7 @@ export default function Close() {
             <div className="ui-component-cta ui-layout-flex">
               <form
                 method="POST"
-                action="https://formspree.io/contact@codos.co.nz"
+                action="https://formspree.io/hosting@ruralholidays.co.nz"
                 className="ui-component-form"
               >
                 <div>
