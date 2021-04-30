@@ -1,6 +1,8 @@
 import React from "react";
+import { useForm, ValidationError } from "@formspree/react";
 
 export default function Close() {
+  const [state, handleSubmit] = useForm("xbjqdoje");
   return (
     <>
       <section className="ui-section-close" id="contact">
@@ -16,11 +18,8 @@ export default function Close() {
               </p>
             </div>
             <div className="ui-component-cta ui-layout-flex">
-              <form
-                method="POST"
-                action="https://formspree.io/hosting@ruralholidays.co.nz"
-                className="ui-component-form"
-              >
+              {state.succeeded && <p>Thanks for conatcing RuralHolidays!</p>}
+              <form onSubmit={handleSubmit} className="ui-component-form">
                 <div>
                   <input
                     type="text"
@@ -29,6 +28,12 @@ export default function Close() {
                     className="ui-component-input ui-component-input-medium"
                     placeholder={"Name"}
                     required
+                    disabled={state.submitting}
+                  />
+                  <ValidationError
+                    prefix="Name"
+                    field="name"
+                    errors={state.errors}
                   />
                 </div>
                 <div>
@@ -39,8 +44,15 @@ export default function Close() {
                     id="email"
                     placeholder={"Email"}
                     required
+                    disabled={state.submitting}
+                  />
+                  <ValidationError
+                    prefix="Email"
+                    field="email"
+                    errors={state.errors}
                   />
                 </div>
+
                 <div>
                   <textarea
                     className="ui-component-input ui-component-input-medium"
@@ -52,13 +64,19 @@ export default function Close() {
                       minHeight: "5rem",
                       resize: "none",
                     }}
+                    disabled={state.submitting}
                   ></textarea>
+                  <ValidationError
+                    prefix="Message"
+                    field="message"
+                    errors={state.errors}
+                  />
                 </div>
                 <div>
                   <button
                     className="ui-component-button ui-component-button-normal ui-component-button-primary"
                     type="submit"
-                    value="send"
+                    disabled={state.submitting}
                   >
                     Submit
                   </button>
