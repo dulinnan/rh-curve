@@ -30,14 +30,12 @@ function defaultBanner() {
           showThumbs={false}
           showArrows={false}
           interval={5000}
-          
         >
           <StaticImage
             src="../images/slider_images/1.jpg"
             loading="lazy"
             alt="#"
             className="ui-image-half-right"
-            style={{borderRadius: "5%"}}
           />
 
           <StaticImage
