@@ -873,6 +873,7 @@ form {
 
   .ui-image-half-right {
     padding-left: var(--ui-layout-gutter);
+    border-radius: 2%;
   }
 
   /*------------------------------------------------------------

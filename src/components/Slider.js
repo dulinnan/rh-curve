@@ -14,76 +14,71 @@ const bannerOneStyle = {
 const borderStyle = {
   border: "10px solid #cdcdcd",
   borderRadius: "5%",
-//   verticalAlign: "bottom"
+  //   verticalAlign: "bottom"
 };
 function defaultBanner() {
   return (
     <>
-      <Carousel
-        infiniteLoop
-        useKeyboardArrows
-        autoPlay
-        dynamicHeight={true}
-        swipeable={false}
-        showStatus={false}
-        showThumbs={false}
-        showArrows={false}
-        interval={5000}
-      >
-
+      <div style={borderStyle}>
+        <Carousel
+          infiniteLoop
+          useKeyboardArrows
+          autoPlay
+          dynamicHeight={true}
+          swipeable={false}
+          showStatus={false}
+          showThumbs={false}
+          showArrows={false}
+          interval={5000}
+          
+        >
           <StaticImage
             src="../images/slider_images/1.jpg"
             loading="lazy"
             alt="#"
-            style={borderStyle}
+            className="ui-image-half-right"
+            style={{borderRadius: "5%"}}
+          />
+
+          <StaticImage
+            src="../images/slider_images/2.png"
+            loading="lazy"
+            alt="#"
             className="ui-image-half-right"
           />
 
-
-        <StaticImage
-          src="../images/slider_images/2.png"
-          loading="lazy"
-          alt="#"
-          style={borderStyle}
-          className="ui-image-half-right"
-        />
-
-        <StaticImage
-          src="../images/slider_images/3.jpg"
-          loading="lazy"
-          alt="#"
-          style={borderStyle}
-          className="ui-image-half-right"
-        />
-        <StaticImage
-          src="../images/slider_images/4.jpg"
-          loading="lazy"
-          alt="#"
-          style={borderStyle}
-          className="ui-image-half-right"
-        />
-        <StaticImage
-          src="../images/slider_images/5.jpg"
-          loading="lazy"
-          alt="#"
-          style={borderStyle}
-          className="ui-image-half-right"
-        />
-        <StaticImage
-          src="../images/slider_images/6.jpg"
-          loading="lazy"
-          alt="#"
-          style={borderStyle}
-          className="ui-image-half-right"
-        />
-        <StaticImage
-          src="../images/slider_images/7.png"
-          loading="lazy"
-          alt="#"
-          style={borderStyle}
-          className="ui-image-half-right"
-        />
-      </Carousel>
+          <StaticImage
+            src="../images/slider_images/3.jpg"
+            loading="lazy"
+            alt="#"
+            className="ui-image-half-right"
+          />
+          <StaticImage
+            src="../images/slider_images/4.jpg"
+            loading="lazy"
+            alt="#"
+            className="ui-image-half-right"
+          />
+          <StaticImage
+            src="../images/slider_images/5.jpg"
+            loading="lazy"
+            alt="#"
+            className="ui-image-half-right"
+          />
+          <StaticImage
+            src="../images/slider_images/6.jpg"
+            loading="lazy"
+            alt="#"
+            className="ui-image-half-right"
+          />
+          <StaticImage
+            src="../images/slider_images/7.png"
+            loading="lazy"
+            alt="#"
+            className="ui-image-half-right"
+          />
+        </Carousel>
+      </div>
     </>
   );
 }
