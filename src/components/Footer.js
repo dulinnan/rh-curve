@@ -19,7 +19,7 @@ export default function Footer() {
           {/* <!-- COPYRIGHT --> */}
           <p className="ui-section-footer--copyright ui-text-note">
             <small>
-              All rights reserved &copy; Rural Holidays NZ Ltd 2004 -{" "}
+              All rights reserved &copy; Rural Holidays NZ Ltd{" "}
               {currentYear}
             </small>
           </p>
