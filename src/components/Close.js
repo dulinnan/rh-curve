@@ -18,7 +18,7 @@ export default function Close() {
               </p>
             </div>
             <div className="ui-component-cta ui-layout-flex">
-              {state.succeeded && <p>Thanks for conatcing RuralHolidays!</p>}
+              {state.succeeded && <p>Thanks for contacting Rural Holidays. We will be in touch shortly.</p>}
               <form onSubmit={handleSubmit} className="ui-component-form">
                 <div>
                   <input
