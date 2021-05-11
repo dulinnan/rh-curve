@@ -11,9 +11,6 @@ export default function Testimonial() {
             inbound tour companies, travel agents and independent travelers
             alike&rdquo;
           </p>
-          <p className="ui-section-testimonial--author">
-            <small className="ui-text-note">Rural Holidays</small>
-          </p>
         </div>
       </div>
     </section>
