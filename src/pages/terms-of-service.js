@@ -22,10 +22,10 @@ const TermOfServicePage = () => {
   `);
   return (
     <>
-      <section className="ui-section-feature" id="our-survices">
+      <section className="ui-section-feature" id="legal-documents">
         <div className="ui-layout-container">
           <h2>Terms of Service</h2>
-          <ul style={{paddingBottom: "10rem"}}>
+          <ul style={{ paddingBottom: "10rem" }}>
             {data.allFile.edges.map((file, index) => {
               return (
                 <li key={`pdf-${index}`}>
@@ -38,8 +38,6 @@ const TermOfServicePage = () => {
           </ul>
         </div>
       </section>
-
-    
     </>
   );
 };
