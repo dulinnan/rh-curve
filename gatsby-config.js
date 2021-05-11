@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Rural Holidays`,
-    siteUrl: "https://ruralholidays.gatsbyjs.io",
+    siteUrl: "https://ruralholidays.co.nz",
     description: `Home to Rural Holidays`,
     author: `CODOS`,
   },
@@ -35,12 +35,12 @@ module.exports = {
     },
     `gatsby-plugin-smoothscroll`,
     {
-      resolve: 'gatsby-plugin-web-font-loader',
+      resolve: "gatsby-plugin-web-font-loader",
       options: {
         google: {
-          families: ['Roboto Slab']
-        }
-      }
+          families: ["Roboto Slab"],
+        },
+      },
     },
     {
       resolve: `gatsby-plugin-layout`,
@@ -48,5 +48,6 @@ module.exports = {
         component: require.resolve(`./src/components/layout.js`),
       },
     },
+    `gatsby-plugin-gatsby-cloud`,
   ],
 };
