@@ -40,7 +40,7 @@ export default function Footer() {
         >
           <p
             className="ui-section-footer--copyright ui-text-note"
-            style={{ marginBottom: ".8rem" }}
+            style={{ marginBottom: ".8rem", fontWeight: "bold" }}
           >
             Terms of Service
           </p>
@@ -52,7 +52,7 @@ export default function Footer() {
                 className="ui-section-footer--copyright ui-text-note"
               >
                 <small>
-                  <a href={file.node.publicURL} download>
+                  <a href={file.node.publicURL} download style={{fontWeight: "bold"}}>
                     {file.node.name}
                   </a>
                 </small>
