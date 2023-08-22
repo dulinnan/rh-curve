@@ -11,10 +11,8 @@ export default function Close() {
             <div>
               <h2>Contact Us</h2>
               <p className="ui-text-intro">
-                Pre booking is essential for all services listed. We prefer as
-                much notice in advance (minimum 21 days) to arrange and pre book
-                our hosts. Our central reservation office is based in
-                Christchurch.
+                Pre booking is essential for all services listed. We prefer as much notice in advance (minimum 21 days)
+                to arrange and pre book our hosts. Our central reservation office is based in Christchurch.
               </p>
             </div>
             <div className="ui-component-cta ui-layout-flex">
@@ -30,11 +28,7 @@ export default function Close() {
                     required
                     disabled={state.submitting}
                   />
-                  <ValidationError
-                    prefix="Name"
-                    field="name"
-                    errors={state.errors}
-                  />
+                  <ValidationError prefix="Name" field="name" errors={state.errors} />
                 </div>
                 <div>
                   <input
@@ -46,11 +40,7 @@ export default function Close() {
                     required
                     disabled={state.submitting}
                   />
-                  <ValidationError
-                    prefix="Email"
-                    field="email"
-                    errors={state.errors}
-                  />
+                  <ValidationError prefix="Email" field="email" errors={state.errors} />
                 </div>
 
                 <div>
@@ -66,11 +56,7 @@ export default function Close() {
                     }}
                     disabled={state.submitting}
                   ></textarea>
-                  <ValidationError
-                    prefix="Message"
-                    field="message"
-                    errors={state.errors}
-                  />
+                  <ValidationError prefix="Message" field="message" errors={state.errors} />
                 </div>
                 <div>
                   <button
